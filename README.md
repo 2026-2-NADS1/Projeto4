@@ -14,7 +14,7 @@ Vide tutoriais do PI.
 
 ## Nome do Grupo
 
-## Integrantes: <a href="https://br.linkedin.com/in/melissa-bohomol-060065311">Melissa Bohomol</a>, <a href="https://www.linkedin.com/in/caio-solera-896a23312/?isSelfProfile=true">Caio Andrade Solera</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://br.linkedin.com/in/melissa-bohomol-060065311">Melissa Bohomol</a>, <a href="https://www.linkedin.com/in/caio-solera-896a23312/?isSelfProfile=true">Caio Andrade Solera</a>, <a href="www.linkedin.com/in/pedro-miranda-b57185329">Pedro Gabriel de Miranda Soares</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
 
