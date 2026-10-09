@@ -1,0 +1,28 @@
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\bin\Debug\net10.0\NI.exe
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\bin\Debug\net10.0\NI.deps.json
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\bin\Debug\net10.0\NI.runtimeconfig.json
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\bin\Debug\net10.0\NI.dll
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\bin\Debug\net10.0\NI.pdb
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\obj\Debug\net10.0\NI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\obj\Debug\net10.0\NI.AssemblyInfoInputs.cache
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\obj\Debug\net10.0\NI.AssemblyInfo.cs
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\obj\Debug\net10.0\NI.csproj.CoreCompileInputs.cache
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\obj\Debug\net10.0\NI.dll
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\obj\Debug\net10.0\refint\NI.dll
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\obj\Debug\net10.0\NI.pdb
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\obj\Debug\net10.0\NI.genruntimeconfig.cache
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI\NI\obj\Debug\net10.0\ref\NI.dll
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\bin\Debug\net10.0\NI.exe
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\bin\Debug\net10.0\NI.deps.json
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\bin\Debug\net10.0\NI.runtimeconfig.json
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\bin\Debug\net10.0\NI.dll
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\bin\Debug\net10.0\NI.pdb
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\obj\Debug\net10.0\NI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\obj\Debug\net10.0\NI.AssemblyInfoInputs.cache
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\obj\Debug\net10.0\NI.AssemblyInfo.cs
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\obj\Debug\net10.0\NI.csproj.CoreCompileInputs.cache
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\obj\Debug\net10.0\NI.dll
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\obj\Debug\net10.0\refint\NI.dll
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\obj\Debug\net10.0\NI.pdb
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\obj\Debug\net10.0\NI.genruntimeconfig.cache
+C:\Users\LTMSEG\OneDrive\Área de Trabalho\NI - algoritimos\NI\obj\Debug\net10.0\ref\NI.dll
