@@ -1,0 +1,196 @@
+using Spectre.Console;
+
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+// ===================== BANCO DE QUESTÕES =====================
+string[] faixasEtarias = {
+    "Até 12 anos", "13 a 17 anos", "18 a 24 anos",
+    "25 a 39 anos", "40 anos ou mais", "Prefiro não informar"
+};
+
+string[] enunciados = {
+    // Fácil
+    "As tartarugas têm dentes bem pequenos, só que escondidos.",
+    "O casco da tartaruga não sente nada, é só uma \"armadura\".",
+    "O casco da tartaruga é uma casinha que ela pode abandonar.",
+    "As tartarugas já existiam no tempo dos dinossauros.",
+    // Médio
+    "Nas tartarugas marinhas, a temperatura da areia define se nascem machos ou fêmeas.",
+    "Todas as tartarugas têm casco duro.",
+    "Uma tartaruga pode ficar horas sem respirar.",
+    "As tartarugas são completamente mudas.",
+    // Difícil
+    "Algumas tartarugas conseguem respirar também pelo bumbum.",
+    "A tartaruga mais velha do mundo ainda está viva, e o nome dela é Jonathan.",
+    "Tortuguitas também é o nome de uma cidade da província de Buenos Aires.",
+    "O nome Arcor vem de \"Arroyito, Córdoba\", a cidade onde a empresa nasceu."
+};
+
+string[] niveis = { "F", "F", "F", "F", "M", "M", "M", "M", "D", "D", "D", "D" };
+
+// 0 = Verdadeiro, 1 = Falso
+string[,] alternativas = {
+    { "Verdadeiro", "Falso" }, { "Verdadeiro", "Falso" },
+    { "Verdadeiro", "Falso" }, { "Verdadeiro", "Falso" },
+    { "Verdadeiro", "Falso" }, { "Verdadeiro", "Falso" },
+    { "Verdadeiro", "Falso" }, { "Verdadeiro", "Falso" },
+    { "Verdadeiro", "Falso" }, { "Verdadeiro", "Falso" },
+    { "Verdadeiro", "Falso" }, { "Verdadeiro", "Falso" }
+};
+
+int[] corretas = { 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0 };
+
+string[] explicacoes = {
+    "Elas têm um bico duro e afiado, sem dentes.",
+    "O casco tem terminações nervosas, e elas sentem até um carinho.",
+    "Ele é parte do esqueleto, fundido com as costelas e a coluna.",
+    "Elas têm mais de 200 milhões de anos.",
+    "Ninhos mais quentes geram mais fêmeas.",
+    "A tartaruga-de-couro tem o casco flexível e coberto por uma pele grossa.",
+    "Quando descansa, uma tartaruga marinha pode ficar submersa por horas.",
+    "Algumas emitem sons, e há até tartarugas que \"conversam\" com os filhotes ainda dentro do ovo.",
+    "Algumas espécies de água doce absorvem oxigênio pela cloaca quando hibernam debaixo d'água.",
+    "Ele é uma tartaruga-gigante de Seychelles, nascida por volta de 1832.",
+    "Fica no partido de Malvinas Argentinas.",
+    "Ela foi fundada em Arroyito, em 1951."
+};
+
+// ===================== INÍCIO DO JOGO =====================
+MostrarAbertura();
+string nickname = LerNickname();
+string faixa = LerFaixaEtaria(faixasEtarias);
+
+int totalQuestoes = enunciados.Length;
+int[] questoesPorNivel = new int[3];
+int[] acertosPorNivel = new int[3];
+bool terminou = false;
+
+for (int i = 0; i < totalQuestoes; i++)
+{
+    AnsiConsole.Write(new Rule($"Questão {i + 1} de {totalQuestoes}"));
+
+    string[] opcoes = ExtrairAlternativas(alternativas, i);
+    int resultado = MostrarQuestao(enunciados[i], opcoes, corretas[i]);
+
+    if (resultado == -1)
+    {
+        terminou = true;
+        break;
+    }
+
+    int nivel = IndiceNivel(niveis[i]);
+    questoesPorNivel[nivel]++;
+
+    if (resultado == 1)
+    {
+        acertosPorNivel[nivel]++;
+        AnsiConsole.MarkupLine("[green]Você acertou![/] " + Markup.Escape(explicacoes[i]));
+    }
+    else
+    {
+        AnsiConsole.MarkupLine("[red]Você errou.[/] Resposta certa: " + Markup.Escape(opcoes[corretas[i]]) + ". " + Markup.Escape(explicacoes[i]));
+    }
+    Console.WriteLine();
+}
+
+if (terminou)
+{
+    AnsiConsole.MarkupLine("[yellow]Quiz encerrado pelo jogador. Até a próxima![/]");
+}
+else
+{
+    int pontos = acertosPorNivel[0] + acertosPorNivel[1] + acertosPorNivel[2];
+    string classificacao = Classificar(pontos, totalQuestoes);
+
+    AnsiConsole.Write(new Rule("Resultado final"));
+    AnsiConsole.MarkupLine($"Jogador: [green]{Markup.Escape(nickname)}[/]");
+    AnsiConsole.MarkupLine($"Fácil {acertosPorNivel[0]}/{questoesPorNivel[0]} | Médio {acertosPorNivel[1]}/{questoesPorNivel[1]} | Difícil {acertosPorNivel[2]}/{questoesPorNivel[2]}");
+    AnsiConsole.MarkupLine($"Pontuação: [yellow]{pontos} de {totalQuestoes}[/]");
+    AnsiConsole.MarkupLine($"Classificação: [green]{classificacao}[/]");
+}
+
+// ===================== FUNÇÕES =====================
+
+static void MostrarAbertura()
+{
+    Console.Clear();
+    AnsiConsole.Write(new FigletText("Desafio das Marcas").Color(Color.Green));
+    AnsiConsole.MarkupLine("[yellow]Bem-vindo ao quiz da Arcor![/]");
+    AnsiConsole.MarkupLine("Use as setas para escolher Verdadeiro ou Falso e tecle Enter.");
+    AnsiConsole.MarkupLine("Cada acerto vale 1 ponto. Escolha TERMINAR para sair a qualquer momento.");
+    Console.WriteLine();
+}
+
+static string LerNickname()
+{
+    return AnsiConsole.Ask<string>("Digite seu [green]nickname[/]:");
+}
+
+static string LerFaixaEtaria(string[] faixas)
+{
+    SelectionPrompt<string> prompt = new SelectionPrompt<string>();
+    prompt.Title("Escolha sua [green]faixa etária[/]:");
+    prompt.AddChoices(faixas);
+    return AnsiConsole.Prompt(prompt);
+}
+
+static string[] ExtrairAlternativas(string[,] alternativas, int linha)
+{
+    int quantidade = alternativas.GetLength(1);
+    string[] opcoes = new string[quantidade];
+    for (int j = 0; j < quantidade; j++)
+    {
+        opcoes[j] = alternativas[linha, j];
+    }
+    return opcoes;
+}
+
+static int MostrarQuestao(string enunciado, string[] opcoes, int correta)
+{
+    SelectionPrompt<string> prompt = new SelectionPrompt<string>();
+    prompt.Title("[green]Verdadeiro ou falso?[/] " + Markup.Escape(enunciado));
+    prompt.AddChoices(opcoes);
+    prompt.AddChoices("TERMINAR");
+
+    string escolha = AnsiConsole.Prompt(prompt);
+
+    if (escolha == "TERMINAR")
+    {
+        return -1;
+    }
+    if (escolha == opcoes[correta])
+    {
+        return 1;
+    }
+    return 0;
+}
+
+static int IndiceNivel(string nivel)
+{
+    if (nivel == "F")
+    {
+        return 0;
+    }
+    else if (nivel == "M")
+    {
+        return 1;
+    }
+    return 2;
+}
+
+static string Classificar(int pontos, int total)
+{
+    if (pontos == total)
+    {
+        return "Tortuguita Mestre";
+    }  
+    else if (pontos >= 8)
+    {
+        return "Tortuguita Sábia";
+    }
+    else if (pontos >= 4)
+    {
+        return "Tortuguita Aprendiz";
+    }
+    return "Tortuguita Noob";
+}
