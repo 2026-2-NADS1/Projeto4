@@ -176,13 +176,4 @@ CREATE TABLE partida_pergunta (
   FOREIGN KEY (id_alternativa_escolhida) REFERENCES alternativa(id_alternativa)
 );
 ```
-
-### Carga inicial de exemplo
-
-```sql
-INSERT INTO marca (nome) VALUES ('Tortuguita'), ('Triunfo');
-```
-
-> As perguntas, alternativas e informações educativas devem ser cadastradas com base em fontes oficiais da Arcor, conforme o briefing do projeto.
-
 [← Voltar ao README principal](../README.md)
