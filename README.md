@@ -1,37 +1,26 @@
-```sh
-Utilize o site <https://www.toptal.com/developers/gitignore> para gerar seu arquivo gitignore e apague este campo.
-
-Vide tutoriais do PI.
-```
-
 # FECAP - Fundação de Comércio Álvares Penteado
 
 <p align="center">
 <a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
-# Nome do Projeto
+# Tortuquiz
 
-## Nome do Grupo
+## MCPY
 
-## Integrantes: <a href="https://br.linkedin.com/in/melissa-bohomol-060065311">Melissa Bohomol</a>, <a href="https://www.linkedin.com/in/caio-solera-896a23312/?isSelfProfile=true">Caio Andrade Solera</a>, <a href="www.linkedin.com/in/pedro-miranda-b57185329">Pedro Gabriel de Miranda Soares</a>, <a href="https://br.linkedin.com/in/yohann-correia-cury-6120701b8">Yohann Correia Cury</a>
+## Integrantes: <a href="https://br.linkedin.com/in/melissa-bohomol-060065311">Melissa Bohomol</a>, <a href="https://www.linkedin.com/in/caio-solera-896a23312/">Caio Andrade Solera</a>, <a href="https://www.linkedin.com/in/pedro-miranda-b57185329">Pedro Gabriel de Miranda Soares</a>, <a href="https://br.linkedin.com/in/yohann-correia-cury-6120701b8">Yohann Correia Cury</a>
 
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Rosseti</a>, <a href="https://www.linkedin.com/in/ronaldo-araujo-pinto-3542811a/">Ronaldo Araujo</a>, <a href="https://www.linkedin.com/in/remuniz/">Renata Muniz</a>, <a href="https://www.linkedin.com/in/mmamorim/">Marcelo Amorim</a>, <a href="https://www.linkedin.com/in/aimarlopes/">Airmar Lopez</a>
 
 ## Descrição
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+<img src="imagens/arcor.png" alt="Tortuquiz" border="0">
 </p>
 
-
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+O Tortuquiz é um jogo de perguntas e respostas (quiz) desenvolvido na Godot como Projeto Interdisciplinar do 1º semestre de Análise e Desenvolvimento de Sistemas da FECAP.
 <br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>
+O jogador responde perguntas, descobre mais sobre as marcas da Arcor e acumula pontos ao longo da partida.
 
 ## 🛠 Estrutura de pastas
 
@@ -50,9 +39,9 @@ May the force be with you!
   &emsp;|-->Frontend<br>
 |readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
+A pasta raiz contém o arquivo que deve ser alterado:
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre o projeto. O mesmo que você está lendo agora.
 
 Há também 4 pastas que seguem da seguinte forma:
 
@@ -68,21 +57,13 @@ Há também 4 pastas que seguem da seguinte forma:
 
 <b>Android:</b>
 
-Faça o Download do JOGO.apk no seu celular.
+Faça o download do Tortuquiz.apk no seu celular.
 Execute o APK e siga as instruções de seu telefone.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
 
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
+Encontre o Tortuquiz.exe na pasta executáveis e execute-o como qualquer outro programa.
 
 <b>HTML:</b>
 
@@ -91,17 +72,16 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+- <a href="https://godotengine.org/download">Godot</a>
 
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
+Depois de instalar a Godot:
+
+1. Clone este repositório.
+2. Abra a Godot e clique em **Importar**.
+3. Selecione o arquivo `project.godot` dentro da pasta `src`.
+4. Clique em **Executar** (F5) para testar o jogo.
 
 ## 📋 Licença/License
 <a href="https://github.com/2026-2-NADS1/Projeto4">Tortuquiz</a> © 2026 by <a href="https://github.com/2026-2-NADS1/Projeto4">Pedro Gabriel de Miranda Soares, Caio Andrade Solera, Melissa Bohomol, Yohann Correia Cury, FECAP</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
