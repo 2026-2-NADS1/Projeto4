@@ -185,14 +185,4 @@ INSERT INTO marca (nome) VALUES ('Tortuguita'), ('Triunfo');
 
 > As perguntas, alternativas e informações educativas devem ser cadastradas com base em fontes oficiais da Arcor, conforme o briefing do projeto.
 
----
-
-## 6. Evidências
-
-> Inserir aqui um print das tabelas criadas no MySQL Workbench ou DBeaver.
->
-> `![Tabelas criadas](./evidencia_tabelas.png)`
-
----
-
 [← Voltar ao README principal](../README.md)
