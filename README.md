@@ -18,7 +18,7 @@
 <img src="imagens/arcor.png" alt="Tortuquiz" border="0">
 </p>
 
-O Tortuquiz é um jogo de perguntas e respostas (quiz) desenvolvido na Godot como Projeto Interdisciplinar do 1º semestre de Análise e Desenvolvimento de Sistemas da FECAP.
+O Tortuquiz é um jogo de perguntas e respostas (quiz) desenvolvido em C# (.NET) para rodar no terminal, como Projeto Interdisciplinar do 1º semestre de Análise e Desenvolvimento de Sistemas da FECAP.
 <br><br>
 O jogador responde perguntas, descobre mais sobre as marcas da Arcor e acumula pontos ao longo da partida.
 
@@ -55,33 +55,27 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
-<b>Android:</b>
+O Tortuquiz roda no terminal. Para jogar:
 
-Faça o download do Tortuquiz.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
+1. Instale o [.NET SDK](https://dotnet.microsoft.com/download).
+2. Abra a pasta do projeto no [VS Code](https://code.visualstudio.com/).
+3. Abra o terminal do VS Code (menu **Terminal > Novo Terminal**).
+4. Cole o comando abaixo e pressione **Enter**:
 
-<b>Windows:</b>
+```sh
+dotnet run
+```
 
-Não há instalação! Apenas executável!
-Encontre o Tortuquiz.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-<b>HTML:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
+Se o projeto estiver dentro de uma subpasta, entre nela antes com `cd nome-da-pasta`.
 
 ## 💻 Configuração para Desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
-- <a href="https://godotengine.org/download">Godot</a>
+- [.NET SDK](https://dotnet.microsoft.com/download)
+- [VS Code](https://code.visualstudio.com/)
 
-Depois de instalar a Godot:
-
-1. Clone este repositório.
-2. Abra a Godot e clique em **Importar**.
-3. Selecione o arquivo `project.godot` dentro da pasta `src`.
-4. Clique em **Executar** (F5) para testar o jogo.
+Para compilar sem executar, use `dotnet build` no terminal.
 
 ## 📋 Licença/License
 <a href="https://github.com/2026-2-NADS1/Projeto4">Tortuquiz</a> © 2026 by <a href="https://github.com/2026-2-NADS1/Projeto4">Pedro Gabriel de Miranda Soares, Caio Andrade Solera, Melissa Bohomol, Yohann Correia Cury, FECAP</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
